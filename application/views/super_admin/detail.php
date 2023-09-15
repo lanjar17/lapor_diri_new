@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <?php $this->load->view("admin/components/header.php") ?>
+    <?php $this->load->view("super_admin/components/header.php") ?>
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -75,11 +75,11 @@
         </div>
 
         <!-- Navbar -->
-        <?php $this->load->view("admin/components/navbar.php") ?>
+        <?php $this->load->view("super_admin/components/navbar.php") ?>
         <!-- /.navbar -->
 
         <!-- Main Sidebar Container -->
-        <?php $this->load->view("admin/components/sidebar.php") ?>
+        <?php $this->load->view("super_admin/components/sidebar.php") ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -92,7 +92,7 @@
                         </div><!-- /.col -->
                         <div class="col-sm-6">
                             <ol class="breadcrumb float-sm-right">
-                                <li class="breadcrumb-item"><a href="<?= base_url(); ?>Lapor/view_admin">Home</a></li>
+                                <li class="breadcrumb-item"><a href="<?= base_url(); ?>Lapor/view_super_admin">Home</a></li>
                                 <li class="breadcrumb-item active">Status Data Lapor Diri Mahasiswa</li>
                             </ol>
                         </div><!-- /.col -->
@@ -145,8 +145,9 @@
                                             $nama_bank = $i['nama_bank'];
                                             $bank_cabang = $i['bank_cabang'];
                                             $no_rekening = $i['no_rekening'];
-                                            $pakta = $i['pakta'];
+                                            $alasan_verifikasi = $i['alasan_verifikasi'];
                                             $format_a1 = $i['format_a1'];
+                                            $pakta = $i['pakta'];
                                             $biodata = $i['biodata'];
                                             $surat_pimpinan = $i['surat_pimpinan'];
                                             $ijazah_s1 = $i['ijazah_s1'];
@@ -286,7 +287,7 @@
                                             <tr>
                                                 <th>Scan Ijazah S1</th>
                                                 <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/ijazah_s1/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
-                                                <td> <embed src="<?php echo base_url("assets/berkas/biodata/") . $biodata ?>" width="700px" height="600px" /> </td>
+                                                <td> <embed src="<?php echo base_url("assets/berkas/ijazah_s1/") . $ijazah_s1 ?>" width="700px" height="600px" /> </td>
                                             </tr>
 
                                             <tr>
@@ -322,7 +323,7 @@
                                             <tr>
                                                 <th>Scan NPWP</th>
                                                 <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/ijazah_s1/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
-                                                <td> <embed src="<?php echo base_url("assets/berkas/scan_npwp/") . $scan_npwp ?>" width="700px" height="600px" /> </td>
+                                                <td> <embed src="<?php echo base_url("assets/berkas/npwp/") . $scan_npwp ?>" width="700px" height="600px" /> </td>
                                             </tr>
 
                                             <tr>
@@ -338,7 +339,7 @@
                                                         </a>
                                                     </div>
                                                     <div>
-                                                        <a href="<?php echo base_url("assets/foto/") . $foto ?>" class="btn btn-primary" download><i class="fa fa-download">Unduh Gambar</i></a>
+                                                        <a href="<?php echo base_url("assets/berkas/foto/") . $foto ?>" class="btn btn-primary" download><i class="fa fa-download">Unduh Gambar</i></a>
                                                     </div>
                                             </tr>
 
@@ -370,7 +371,7 @@
     </div>
     <!-- ./wrapper -->
 
-    <?php $this->load->view("admin/components/js.php") ?>
+    <?php $this->load->view("super_admin/components/js.php") ?>
 </body>
 
 </html>

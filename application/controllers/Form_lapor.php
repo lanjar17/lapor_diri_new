@@ -191,7 +191,7 @@ class Form_Lapor extends CI_Controller
         $this->upload->do_upload('surat_napza');
 
         // Upload npwp
-        $dokumen_npwp = time() . "-" . $_FILES['npwp']['name'];
+        $dokumen_npwp = time() . "-" . $_FILES['scan_npwp']['name'];
         $config_npwp = array(
             'upload_path' => "./assets/berkas/npwp/",
             'allowed_types' => "jpg|pdf",
@@ -201,12 +201,12 @@ class Form_Lapor extends CI_Controller
         );
         $this->load->library('upload', $config_npwp);
         $this->upload->initialize($config_npwp);
-        $this->upload->do_upload('npwp');
+        $this->upload->do_upload('scan_npwp');
 
         // Upload Foto
         $foto = time() . "-" . $_FILES['foto']['name'];
         $config_foto = array(
-            'upload_path' => "./assets/foto/",
+            'upload_path' => "./assets/berkas/foto/",
             'allowed_types' => "jpg|jpeg|png",
             'overwrite' => TRUE,
             'max_size' => "2048000",
@@ -267,7 +267,7 @@ class Form_Lapor extends CI_Controller
         } else {
             $this->session->set_flashdata('input', 'input');
         }
-        redirect('Form_Lapor/view_mahasiswa');
+        redirect('Form_lapor/view_mahasiswa');
     } else {
         $this->session->set_flashdata('loggin_err', 'loggin_err');
         redirect('Login/index');
