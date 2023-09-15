@@ -281,7 +281,7 @@
                                 </div>
                                 <div class="form-group">
                                     <label for="password">Password</label>
-                                    <input type="text" class="form-control" id="password" aria-describedby="password"
+                                    <input type="date" class="form-control" id="password" aria-describedby="password"
                                         name="password">
                                 </div>
                                 <div class="form-group">

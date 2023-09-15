@@ -321,13 +321,13 @@
                         <div class="modal-body">
                             <form action="<?=base_url();?>Mahasiswa/tambah_mahasiswa" method="POST">
                                 <div class="form-group">
-                                    <label for="username">Username</label>
+                                    <label for="username">No UKG</label>
                                     <input type="text" class="form-control" id="username" aria-describedby="username"
                                         name="username" required>
                                 </div>
                                 <div class="form-group">
-                                    <label for="password">Password</label>
-                                    <input type="text" class="form-control" id="password" aria-describedby="password"
+                                    <label for="password">Tanggal Lahir</label>
+                                    <input type="date" class="form-control" id="password" aria-describedby="password"
                                         name="password" required>
                                 </div>
                                 <div class="form-group">

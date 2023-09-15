@@ -114,7 +114,7 @@
 
 
                     <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="username" placeholder="username">
+                        <input class="input100" type="text" name="username" placeholder="NO UKG">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
@@ -122,7 +122,7 @@
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <input class="input100" type="password" name="password" placeholder="password">
+                        <input class="input100" type="date" name="password" placeholder="Tanggal Lahir">
                         <span class="focus-input100"></span>
                         <span class="symbol-input100">
                             <i class="fa fa-lock" aria-hidden="true"></i>
@@ -137,7 +137,7 @@
 
                     <div>
                         <p style="margin-top: 20px; text-align: center;">Untuk Mendapatkan Akses Login, silahkan email ke: <a href="mailto:ppg.fkip@unissula.ac.id">ppg.fkip@unissula.ac.id</a></p>
-                        <p style="margin-top: 20px; text-align: center;">Guidebook Lapor Diri :<a href="https://drive.google.com/file/d/1JgJPakOKAh3ryc_0Ilq94eA5emkssBtX/view?usp=drive_link" target="_blank">&nbsp; klik disini.</a></p>
+                        <p style="margin-top: 20px; text-align: center;">Guidebook Lapor Diri :<a href="https://drive.google.com/file/d/1WahXXaIsGC2V-3yCsNaPDbktG8Q-vCwu/view?usp=sharing" target="_blank">&nbsp; klik disini.</a></p>
                         <!-- <p style="text-align: center;">Degan Subyek "Login Lapor Diri"</p> -->
                     </div>
 
