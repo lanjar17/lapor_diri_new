@@ -73,7 +73,7 @@
                                     <p>Data Lapor Diri</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-bag"></i>
+                                    <i class="ion ion-folder"></i>
                                 </div>
                                 <a href="<?= base_url(); ?>Lapor/view_mahasiswa/<?= $this->session->userdata('id_user'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
@@ -88,7 +88,7 @@
                                     <p>Data Divalidasi</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-stats-bars"></i>
+                                    <i class="ion ion-checkmark-circled"></i>
                                 </div>
                                 <a href="<?= base_url(); ?>Lapor/view_mahasiswa/<?= $this->session->userdata('id_user'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
@@ -103,7 +103,7 @@
                                     <p>Data Ditolak</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-person-add"></i>
+                                    <i class="ion ion-close-circled"></i>
                                 </div>
                                 <a href="<?= base_url(); ?>Lapor/view_mahasiswa/<?= $this->session->userdata('id_user'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
@@ -118,7 +118,7 @@
                                     <p>Data Menunggu Konfirmasi</p>
                                 </div>
                                 <div class="icon">
-                                    <i class="ion ion-person-add"></i>
+                                    <i class="ion ion-load-a"></i>
                                 </div>
                                 <a href="<?= base_url(); ?>Lapor/view_mahasiswa/<?= $this->session->userdata('id_user'); ?>" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                             </div>
@@ -136,34 +136,30 @@
                                 1. Upload Berkas dalam format <b>.pdf</b>
                             </p>
                             <p class="card-text">
-                                2. Mohon Untuk Penamaan Berkas <b>TIDAK MEMAKAI SPASI.</b> contoh : <b>Berkas_NamaMahasiswa_2021.pdf</b>
+                                2. Mohon Untuk Penamaan Berkas <b>TIDAK MEMAKAI SPASI.</b> contoh : <b>BerkasKTP_NamaMahasiswa_2023.pdf</b>
                             </p>
                             <p class="card-text">
-                                3. Berkas yang diperlukan
-                                <p class="card-text">- PAKTA INTEGRITAS DARI SIMPKB*</p>
-                                <p>- SETIFIKAT VAKSIN KE-3 ATAU HASIL NEGATIF PCR 2X24 JAM*</p>
-                                <p>- SURAT KETERANGAN SEHAT JASMANI DAN ROHANI*</p>
-                                <p>- PAS FOTO TERBARU DENGAN LATAR BELAKANG MERAH*</p>
-                                <p>- SURAT KETERANGAN CATATAN KEPOLISIAN (SKCK)*</p>
-                                <p>- SURAT BEBAS NAPZA*</p>
-                                <p>- SCAN NPWP*</p>
-                                <p>- SCAN KTP*</p>
+                                3. Ukuran File Maksimal <b>2Mb</b>
                             </p>
                             <p class="card-text">
-                                4. Download Format Unggah Berkas di bawah ini
-                            </p>
+                                4. Berkas yang diperlukan : Bisa dilihat pada website PPG FKIP UNISSULA <a href="https://ppg.unissula.ac.id/lapor-diri-ppg-dalam-jabatan-k1-angkatan-ii-tahun-2023-universitas-islam-sultan-agung/" target="_blank">Klik Disini.</a>
                         </div>
                     </div>
+
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title">Download Format Berkas Lapor Diri</h5>
+                            <h5 class="card-title">Guidebook Lapor Diri</h5>
                         </div>
                         <div class="card-body">
                             <p class="card-text">
-                            <iframe src="https://drive.google.com/file/d/1EAPyctUuJssSsq_ebTfOm4p8w84n5tz0/preview" width="640" height="480" allow="autoplay"></iframe>
+                                1. <b>Buku Panduan</b> Lapor Diri Mahasiswa PPG FKIP UNISSULA
                             </p>
-                        </div>
+                            <p class="card-text">
+                                <iframe src="https://drive.google.com/file/d/1WahXXaIsGC2V-3yCsNaPDbktG8Q-vCwu/preview" width="1000" height="500"></iframe>
+                            </p>
                     </div>
+                    </div>
+                    
 
 
 

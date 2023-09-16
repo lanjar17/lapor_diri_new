@@ -46,7 +46,7 @@
                         <p>Form Lapor Diri</p>
                     </a>
                 </li>
-                <li class="nav-item" style="<?php echo  $mahasiswa['nama_lengkap'] == '' ? 'display:none;' : ' ' ?>">
+                <!-- <li class="nav-item" style="<?php echo  $mahasiswa['nama_lengkap'] == '' ? 'display:none;' : ' ' ?>">
                     <a href="<?= base_url();?>Form_berkas/view_berkas" class="nav-link">
                         <i class="nav-icon fas fa-edit"></i>
                         <p>Form Berkas</p>
@@ -57,7 +57,7 @@
                         <i class="nav-icon fas fa-edit"></i>
                         <p>Upload Foto</p>
                     </a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                     <a href="<?= base_url();?>lapor/view_mahasiswa/<?=$this->session->userdata('id_user');?>" class="nav-link">
                         <i class="nav-icon fas fa-envelope"></i>

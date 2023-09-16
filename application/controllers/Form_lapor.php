@@ -48,7 +48,6 @@ class Form_Lapor extends CI_Controller
         $nim = $this->input->post("nim");
         $lptk = $this->input->post("lptk");
         $bidang_studi = $this->input->post("bidang_studi");
-        $nama_kelas = $this->input->post("nama_kelas");
         $alamat = $this->input->post("alamat");
         $provinsi = $this->input->post("provinsi");
         $kabupaten = $this->input->post("kabupaten");
@@ -67,6 +66,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_format_a1
         );
         $this->load->library('upload', $config_format_a1);
@@ -80,6 +80,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_pakta
         );
         $this->load->library('upload', $config_pakta);
@@ -93,6 +94,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_biodata
         );
         $this->load->library('upload', $config_biodata);
@@ -106,6 +108,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_surat_pimpinan
         );
         $this->load->library('upload', $config_surat_pimpinan);
@@ -119,6 +122,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_ijazah_s1
         );
         $this->load->library('upload', $config_ijazah_s1);
@@ -132,6 +136,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_transkrip_s1
         );
         $this->load->library('upload', $config_transkrip_s1);
@@ -145,6 +150,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_ktp
         );
         $this->load->library('upload', $config_ktp);
@@ -158,6 +164,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_skck
         );
         $this->load->library('upload', $config_skck);
@@ -171,6 +178,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_surat_sehat
         );
         $this->load->library('upload', $config_surat_sehat);
@@ -184,6 +192,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_surat_napza
         );
         $this->load->library('upload', $config_surat_napza);
@@ -197,11 +206,40 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|pdf",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $dokumen_npwp
         );
         $this->load->library('upload', $config_npwp);
         $this->upload->initialize($config_npwp);
         $this->upload->do_upload('scan_npwp');
+
+        // Upload kk
+        $dokumen_kk = time() . "-" . $_FILES['kk']['name'];
+        $config_kk = array(
+            'upload_path' => "./assets/berkas/kk/",
+            'allowed_types' => "jpg|pdf",
+            'overwrite' => TRUE,
+            'max_size' => "2048000",
+            'remove_spaces' => TRUE,
+            'file_name' => $dokumen_kk
+        );
+        $this->load->library('upload', $config_kk);
+        $this->upload->initialize($config_kk);
+        $this->upload->do_upload('kk');
+
+        // Upload sk kepegawaian
+        $dokumen_sk_kepegawaian = time() . "-" . $_FILES['sk_kepegawaian']['name'];
+        $config_sk_kepegawaian = array(
+            'upload_path' => "./assets/berkas/sk_kepegawaian/",
+            'allowed_types' => "jpg|pdf",
+            'overwrite' => TRUE,
+            'max_size' => "2048000",
+            'remove_spaces' => TRUE,
+            'file_name' => $dokumen_sk_kepegawaian
+        );
+        $this->load->library('upload', $config_sk_kepegawaian);
+        $this->upload->initialize($config_sk_kepegawaian);
+        $this->upload->do_upload('sk_kepegawaian');
 
         // Upload Foto
         $foto = time() . "-" . $_FILES['foto']['name'];
@@ -210,6 +248,7 @@ class Form_Lapor extends CI_Controller
             'allowed_types' => "jpg|jpeg|png",
             'overwrite' => TRUE,
             'max_size' => "2048000",
+            'remove_spaces' => TRUE,
             'file_name' => $foto
         );
         $this->load->library('upload', $config_foto);
@@ -237,7 +276,6 @@ class Form_Lapor extends CI_Controller
             $nim,
             $lptk,
             $bidang_studi,
-            $nama_kelas,
             $alamat,
             $provinsi,
             $kabupaten,
@@ -259,6 +297,8 @@ class Form_Lapor extends CI_Controller
             $dokumen_surat_sehat,
             $dokumen_surat_napza,
             $dokumen_npwp,
+            $dokumen_kk,
+            $dokumen_sk_kepegawaian,
 			$foto
         );
 

@@ -415,6 +415,19 @@
 
                         </div>
 
+                        <div class="row mb-3">
+                            <div class="col-md col-12 pt-3">
+                                <label for="" class="labels text-gray-800">Scan Kartu Keluarga</label>
+                                <input class="form-control editable" type="file" name="kk" id="kk" placeholder="" aria-describedby="kk" required>
+                            </div>
+
+                            <div class="col-md col-12 pt-3">
+                                <label for="" class="labels text-gray-800">Scan SK Kepegawaian Terakhir</i></label>
+                                <input class="form-control editable" type="file" name="sk_kepegawaian" id="sk_kepegawaian" placeholder="" aria-describedby="sk_kepegawaian" required>
+                            </div>
+
+                        </div>
+
                         <div class="col-12 pt-0">
                             <div class="dropdown-divider"></div>
                             <div class="divider-text text-center mb-3">Upload Foto</div>

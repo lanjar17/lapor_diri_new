@@ -135,7 +135,6 @@
                                             $nim = $i['nim'];
                                             $lptk = $i['lptk'];
                                             $bidang_studi = $i['bidang_studi'];
-                                            $nama_kelas = $i['nama_kelas'];
                                             $alamat = $i['alamat'];
                                             $provinsi = $i['provinsi'];
                                             $kabupaten = $i['kabupaten'];
@@ -157,6 +156,8 @@
                                             $surat_sehat = $i['surat_sehat'];
                                             $surat_napza = $i['surat_napza'];
                                             $scan_npwp = $i['scan_npwp'];
+                                            $kk = $i['kk'];
+                                            $sk_kepegawaian = $i['sk_kepegawaian'];
                                             $foto = $i['foto'];
                                             $id_status_mahasiswa = $i['id_status_mahasiswa'];
 
@@ -218,10 +219,6 @@
                                             <tr>
                                                 <th>Bidang Studi</th>
                                                 <td><?= $bidang_studi ?></td>
-                                            </tr>
-                                            <tr>
-                                                <th>Nama Kelas</th>
-                                                <td><?= $nama_kelas ?></td>
                                             </tr>
                                             <tr>
                                                 <th>Alamat</th>
@@ -316,14 +313,26 @@
 
                                             <tr>
                                                 <th>Scan Surat NAPZA</th>
-                                                <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/ijazah_s1/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
+                                                <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/surat_napza/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
                                                 <td> <embed src="<?php echo base_url("assets/berkas/surat_napza/") . $surat_napza ?>" width="700px" height="600px" /> </td>
                                             </tr>
 
                                             <tr>
                                                 <th>Scan NPWP</th>
-                                                <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/ijazah_s1/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
+                                                <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/npwp/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
                                                 <td> <embed src="<?php echo base_url("assets/berkas/npwp/") . $scan_npwp ?>" width="700px" height="600px" /> </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Scan Kartu Keluarga</th>
+                                                <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/kk/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
+                                                <td> <embed src="<?php echo base_url("assets/berkas/kk/") . $kk ?>" width="700px" height="600px" /> </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>Scan SK Kepegawaian</th>
+                                                <!-- <td><a class="btn btn-success" href="<?php echo base_url("assets/berkas/sk_kepegawaian/") . $ijazah_s1 ?>">Lihat Berkas <?= $nama ?></a></td> -->
+                                                <td> <embed src="<?php echo base_url("assets/berkas/sk_kepegawaian/") . $sk_kepegawaian ?>" width="700px" height="600px" /> </td>
                                             </tr>
 
                                             <tr>
